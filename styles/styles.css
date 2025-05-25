@@ -1,3 +1,15 @@
+:root {
+    --background: #eaeaea;
+    --primary: #581845;
+    --text: #000000;
+    --text-secondary: #5F5F5F;
+}
+
+/* Elements */
+li {
+    list-style: none;
+}
+
 /* Header */
 .site-header {
     padding: 1rem;
@@ -8,4 +20,24 @@
 
 .site-logo {
     width: clamp(120px, 10vw, 180px);
+}
+
+/* Navigation */
+.movie-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-btn {
+    padding: clamp(0.3rem, 2vw, .5rem) clamp(1rem, 15vw, 3rem);
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn.active {
+    background-color: var(--primary);
+    color: var(--background);
 }
