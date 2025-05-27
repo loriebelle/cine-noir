@@ -10,6 +10,10 @@ li {
     list-style: none;
 }
 
+img {
+    max-width: none;
+}
+
 /* Header */
 .site-header {
     padding: 1rem;
@@ -45,6 +49,7 @@ li {
 /* Movies */
 .poster-scroll {
     display: flex;
+    gap: 1rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -52,5 +57,9 @@ li {
 }
 
 .movie-card {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
+}
+
+.movie-poster {
+    width: clamp(250px, 10vw, 300px);
 }
