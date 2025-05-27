@@ -36,6 +36,10 @@ filterButtons.forEach(btn => {
         // Remove active class from all
         filterButtons.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
+
+        currentFilter = btn.getAttribute("data-filter");
+        renderMovies();
+        container.scrollLeft = 0;
     });
 });
 

@@ -41,3 +41,16 @@ li {
     background-color: var(--primary);
     color: var(--background);
 }
+
+/* Movies */
+.poster-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.movie-card {
+    scroll-snap-align: start;
+}

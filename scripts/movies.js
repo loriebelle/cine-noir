@@ -104,5 +104,12 @@ const movies = [
     year: 1954,
     decade: "1950s",
     poster: "media/rear-window.webp",
+  },
+  {
+    title: "Rebel Without a Cause",
+    director: "Nicholas Ray",
+    year: 1955,
+    decade: "1950s",
+    poster: "media/rebel-without-a-cause.webp",
   }
 ];
