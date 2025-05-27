@@ -13,8 +13,8 @@ function createMovieCard(movie) {
         <div class="movie-card">
             <img src="${movie.poster}" alt="${movie.title} Poster" class="movie-poster">
             <h1>${movie.title}</h1>
-            <p>${director}</p>
-            <p>${movie.year}</p>
+            <p class="movie-director">${director}</p>
+            <p class="movie-year">${movie.year}</p>
         </div>
     `
 }
