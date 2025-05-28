@@ -5,9 +5,39 @@
     --text-secondary: #5F5F5F;
 }
 
+/* Bg color */
+body {
+    background-color: var(--background);
+}
+
+/* Fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amarante", serif;
+    color: var(--primary);
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+body {
+    font-family: "Crimson Text", serif;
+}
+
 /* Elements */
 li {
     list-style: none;
+}
+
+img {
+    max-width: none;
 }
 
 /* Header */
@@ -45,6 +75,7 @@ li {
 /* Movies */
 .poster-scroll {
     display: flex;
+    gap: 1rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -52,5 +83,23 @@ li {
 }
 
 .movie-card {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
+}
+
+.movie-poster {
+    width: clamp(250px, 10vw, 300px);
+}
+
+.movie-director,
+.movie-year {
+    text-align: center;
+}
+
+.movie-director {
+    font-size: clamp(1.13rem, 5vw, 1.25rem);
+}
+
+.movie-year {
+    font-size: clamp(1rem, 5vw, 1.13rem);
+    color: var(--text-secondary);
 }
